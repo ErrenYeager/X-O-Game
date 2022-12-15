@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Game from "./Game";
-import StartGame from "./StartGame";
+import Starter from "./Starter";
 
 class App extends React.Component {
   negativeHandler = (event) => {};
@@ -12,8 +11,7 @@ class App extends React.Component {
     return (
       <>
         <BrowserRouter>
-          <Route path="/" exact component={StartGame} />
-          <Route path="/game" exact component={Game} />
+          <Route path="/" exact component={Starter} />
         </BrowserRouter>
       </>
     );
